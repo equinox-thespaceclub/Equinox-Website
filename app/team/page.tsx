@@ -1,4 +1,4 @@
-import { teamData } from '@/data/team';
+import { teamData } from '../data/team';
 import { FaInstagram, FaLinkedin, FaTwitter, FaGithub } from 'react-icons/fa';
 import Image from 'next/image';
 
