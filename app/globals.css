@@ -100,3 +100,13 @@ a, button {
 *:hover {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* Floating Animation */
+@keyframes floating {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+.animate-floating {
+  animation: floating 3s infinite ease-in-out;
+}

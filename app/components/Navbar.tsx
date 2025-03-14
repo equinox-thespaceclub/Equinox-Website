@@ -7,7 +7,7 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="fixed top-0 left-0 w-full px-4 sm:px-8 py-4 text-white backdrop-blur-sm bg-black/50 z-50">
+    <nav className="w-full px-4 sm:px-8 py-4 text-white backdrop-blur-sm bg-black/50">
       <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center">
         <Link href="/" className="text-lg font-bold mb-4 sm:mb-0">Equinox</Link>
         <ul className="flex flex-wrap justify-center gap-6">
@@ -41,6 +41,14 @@ const Navbar = () => {
               className={`hover:text-gray-300 transition ${pathname === '/team' ? 'text-blue-400' : ''}`}
             >
               Our Team
+            </Link>
+          </li>
+          <li>
+            <Link 
+              href="/contact" 
+              className={`hover:text-gray-300 transition ${pathname === '/contact' ? 'text-blue-400' : ''}`}
+            >
+              Contact Us
             </Link>
           </li>
         </ul>
